@@ -142,8 +142,14 @@ a {
 .video {
   width: 90%;
   margin: 5px 15px;
+  height: 150px;
 }
-
+.paquetes {
+  width: 90%;
+  height: 300px;
+  margin: 5px 15px;
+  padding-bottom: 350px;
+}
 .Descripcion {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: medium;
@@ -157,16 +163,19 @@ a {
   right: 15px;
 }
 .footer__Logo {
-  width: 2cm;
+  width: 50px;
 }
 .footer {
   background-color: blueviolet;
   color: rgb(253, 253, 253);
+  width: 100%;
+  position: absolute;
+  position: bottom;
+  bottom: fixed;
   display: grid;
   grid-template-columns: 100px 60px 1fr 1fr;
   justify-items: center;
   align-items: center;
-  gap: 0px 10px;
 }
 
 .Formulario {
@@ -278,7 +287,10 @@ a {
     width="560px" 
     height="260px"
   }
-
+  .paquetes {
+    width: 560px;
+    height: 360px;
+  }
   .fixed {
     position: fixed;
     bottom: 40px;
