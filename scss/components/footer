@@ -1,0 +1,23 @@
+.footer__Logo {
+    width: 50px;
+  }
+  .footer {
+    background-color: blueviolet;
+    color: rgb(253, 253, 253);
+    width: 100%;
+    position: absolute;
+    position: bottom;
+    bottom: fixed;
+    display: grid;
+    grid-template-columns: 100px 60px 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  
+  @media (min-width: 992px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 100px 100px 1fr 1fr;
+  }
+}

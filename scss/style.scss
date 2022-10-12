@@ -1,0 +1,66 @@
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+@import scss\components\nav-bar
+@import scss\pages\_index.scss
+@import scss\pages\_paquetes-invierno.scss
+@import scss\pages\_paquetes-verano.scss
+@import scss\components\footer
+
+{
+    margin: 0cm;
+    padding: 0cm;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+  }
+  
+  
+  .fixed {
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+  }
+  
+  .Formulario {
+    border: solid 1px;
+  }
+  
+  @media (min-width: 992px) {
+    .header {
+      width: 100%;
+    }
+    .main__header {
+      height: 85px;
+      display: grid;
+      grid-template-columns: 100px 100px auto;
+      align-items: center;
+      top: 0%;
+    }
+    
+    
+    .main__body__Proyectos {
+      background-image: url(img\Background-index.jpeg);
+      width: 100% 
+      padding\: 70px;
+      display: grid;
+      grid-template-areas: 
+      "card-01 card-02 card-03 card-04";
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 50px 20px;
+      justify-content: center 
+    }
+    .fixed {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+    }
+  }

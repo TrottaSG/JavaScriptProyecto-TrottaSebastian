@@ -1,12 +1,11 @@
 * {
   margin: 0cm;
-  padding: 0cm;
-  background-color: ;
-}
+  padding: 0cm; }
+
 .header {
   background-color: blueviolet;
-  color: rgb(253, 253, 253);
-}
+  color: #fdfdfd; }
+
 .main__header {
   background-color: blueviolet;
   color: white;
@@ -16,88 +15,76 @@
   display: grid;
   grid-template-columns: 100px 60px auto;
   align-items: center;
-  top: 0%;
-}
+  top: 0%; }
+
 .main__header__nav {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   justify-items: center;
-  gap: 0px 2px;
-}
+  gap: 0px 2px; }
+
 .main__header__nav__ul {
   border: 2px solid white;
   border-radius: 5px;
   justify-content: center;
-  text-align: center;
-}
+  text-align: center; }
+
 body {
   background-color: white;
   color: black;
-  align-items: center;
-}
+  align-items: center; }
+
 .main__body {
   padding: 5px 15px;
   display: grid;
-  grid-template-areas: 
-  "card-01"
-  "card-02" 
-  "card-03"
-  "card-04"
-  "card-05" 
-  "card-06"
-  "card-07" 
-  "card-08" 
-  "card-09"
-  "card-10" 
-  "card-11" 
-  "card-12";
+  grid-template-areas: "card-01" "card-02"  "card-03" "card-04" "card-05"  "card-06" "card-07"  "card-08"  "card-09" "card-10"  "card-11"  "card-12";
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  gap: 15px 0;
-}
+  gap: 15px 0; }
+
 .card-01 {
-  grid-area: card-01;
-}
+  grid-area: card-01; }
+
 .card-02 {
-  grid-area: card-02;
-}
+  grid-area: card-02; }
+
 .card-03 {
-  grid-area: card-03;
-}
+  grid-area: card-03; }
+
 .card-04 {
-  grid-area: card-04;
-}
+  grid-area: card-04; }
+
 .card-05 {
-  grid-area: card-05;
-}
+  grid-area: card-05; }
+
 .card-06 {
-  grid-area: card-06;
-}
+  grid-area: card-06; }
+
 .card-07 {
-  grid-area: card-07;
-}
+  grid-area: card-07; }
+
 .card-08 {
-  grid-area: card-08;
-}
+  grid-area: card-08; }
+
 .card-09 {
-  grid-area: card-09;
-}
+  grid-area: card-09; }
+
 .card-10 {
-  grid-area: card-10;
-}
+  grid-area: card-10; }
+
 .card-11 {
-  grid-area: card-11;
-}
+  grid-area: card-11; }
+
 .card-12 {
-  grid-area: card-12;
-}
+  grid-area: card-12; }
+
 .card {
   position: relative;
   width: 100%;
-  height: 300px;
-}
+  height: 300px; }
+
 .card .face {
   position: absolute;
   width: 100%;
@@ -105,14 +92,14 @@ body {
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.5s;
-}
+  transition: 0.5s; }
+
 .card .front img {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
+  object-fit: cover; }
+
 .card .front h3 {
   position: absolute;
   bottom: 0;
@@ -120,54 +107,53 @@ body {
   height: 45px;
   line-height: 45px;
   color: white;
-  background: rgba(0,0,0,.4);
+  background: rgba(0, 0, 0, 0.4);
   text-align: center;
-  align-items: center;
-}
+  align-items: center; }
+
 .card .back {
-  color: black;
-}
+  color: black; }
+
 a {
   text-decoration: none;
   color: white;
   font-family: "Times New Roman", Times, serif;
-  font-size: large;
-}
+  font-size: large; }
 
 .imagen {
   border: dashed;
   width: 90%;
-  margin: 5px 15px;
-}
+  margin: 5px 15px; }
+
 .video {
   width: 90%;
   margin: 5px 15px;
-  height: 150px;
-}
+  height: 150px; }
+
 .paquetes {
   width: 90%;
   height: 300px;
   margin: 5px 15px;
-  padding-bottom: 350px;
-}
+  padding-bottom: 350px; }
+
 .Descripcion {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: medium;
   text-align: left;
   margin: 15px;
-  width: 75%;
-}
+  width: 75%; }
+
 .fixed {
   position: fixed;
   bottom: 50px;
-  right: 15px;
-}
+  right: 15px; }
+
 .footer__Logo {
-  width: 50px;
-}
+  width: 50px; }
+
 .footer {
   background-color: blueviolet;
-  color: rgb(253, 253, 253);
+  color: #fdfdfd;
   width: 100%;
   position: absolute;
   position: bottom;
@@ -175,72 +161,56 @@ a {
   display: grid;
   grid-template-columns: 100px 60px 1fr 1fr;
   justify-items: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .Formulario {
-  border: solid 1px;
-}
+  border: solid 1px; }
 
 @media (min-width: 992px) {
   .header {
-    width: 100%;
-  }
+    width: 100%; }
   .main__header {
     height: 85px;
     display: grid;
     grid-template-columns: 100px 100px auto;
     align-items: center;
-    top: 0%;
-  }
+    top: 0%; }
   .main__header__nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: end;
-    gap: 0px 10px; 
-  }
+    gap: 0px 10px; }
   .main__header__nav__ul {
     border: 2px solid white;
     border-radius: 35px;
     padding: 5px 20px;
-    justify-content: center;
-  }
+    justify-content: center; }
   .main__body {
     background-image: url(../img/Background-index.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 70px 70px 70px;
     display: grid;
-    grid-template-areas: 
-    "card-01 card-02 card-03"
-    "card-04 card-05 card-06"
-    "card-07 card-08 card-09"
-    "card-10 card-11 card-12";
+    grid-template-areas: "card-01 card-02 card-03" "card-04 card-05 card-06" "card-07 card-08 card-09" "card-10 card-11 card-12";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 50px 20px;
-  }
+    gap: 50px 20px; }
   .main__body__Proyectos {
-    background-image: url(img\Background Index.jpeg);
-    width: 100% 
-    padding: 70px;
+    background-image: url(img\Background-index.jpeg);
+    width: 100%  padding\: 70px;
     display: grid;
-    grid-template-areas: 
-    "card-01 card-02 card-03 card-04";
+    grid-template-areas: "card-01 card-02 card-03 card-04";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 50px 20px;
-    justify-content: center 
-  }
+    justify-content: center; }
   .card {
     position: relative;
     width: 350px;
-    height: 300px;
-  }
+    height: 300px; }
   .card .front {
     transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px black;
-  }
+    box-shadow: 0 5px 10px black; }
   .card .back {
     transform: perspective(600px) rotateY(180deg);
     background: black;
@@ -250,54 +220,37 @@ a {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    box-shadow: 0 5px 10px black;
-  }
+    box-shadow: 0 5px 10px black; }
   .card .back h3 {
     font-size: 30px;
     margin-top: 20px;
-    letter-spacing: 2px;
-  }
+    letter-spacing: 2px; }
   .card .back p {
-    letter-spacing: 1px;
-  }
-  
+    letter-spacing: 1px; }
   .card .back .link {
     border-top: solid 1px white;
-  height: 50px;
-  line-height: 50px;
-  }
+    height: 50px;
+    line-height: 50px; }
   .card .back .link a {
-    color: white;
-  }
+    color: white; }
   .card:hover .front {
-    transform: perspective(600px) rotateY(180deg);
-  }
+    transform: perspective(600px) rotateY(180deg); }
   .card:hover .back {
-    transform: perspective(600px) rotateY(360deg);
-  }
+    transform: perspective(600px) rotateY(360deg); }
   .Descripcion {
     margin: 15px;
-    width: 40%;
-  }
+    width: 40%; }
   .imagen {
-    width="40%"  
-    height="40%"
-  }
+    width: "40%" height= "40%"; }
   .video {
-    width="560px" 
-    height="260px"
-  }
+    width: "560px" height= "260px"; }
   .paquetes {
     width: 560px;
-    height: 360px;
-  }
+    height: 360px; }
   .fixed {
     position: fixed;
     bottom: 40px;
-    right: 40px;
-  }
+    right: 40px; }
   .footer {
     display: grid;
-    grid-template-columns: 100px 100px 1fr 1fr;
-  }
-}
+    grid-template-columns: 100px 100px 1fr 1fr; } }
