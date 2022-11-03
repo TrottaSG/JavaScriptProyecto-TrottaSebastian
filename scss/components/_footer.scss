@@ -7,7 +7,7 @@
     width: 100%;
     position: absolute;
     position: bottom;
-    bottom: fixed;
+    bottom: 0;
     display: grid;
     grid-template-columns: 100px 60px 1fr 1fr;
     justify-items: center;
