@@ -13,7 +13,12 @@
     justify-items: center;
     align-items: center;
   }
-
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
   
   @media (min-width: 992px) {
   .footer {

@@ -109,6 +109,19 @@
   .card .back {
     color: black;
   }
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+  }
+  
+  
+  .fixed {
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+  }
 
   @media (min-width: 992px) {
 
@@ -131,6 +144,8 @@
         position: relative;
         width: 350px;
         height: 300px;
+        background-color: transparent;
+        border: none;
       }
       .card .front {
         transform: perspective(600px) rotateY(0deg);
