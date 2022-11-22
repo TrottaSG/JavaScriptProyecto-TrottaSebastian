@@ -5,11 +5,11 @@
     background-color: blueviolet;
     color: rgb(253, 253, 253);
     width: 100%;
-    position: absolute;
+    position: fixed;
     position: bottom;
     bottom: 0;
     display: grid;
-    grid-template-columns: 100px 60px 1fr 1fr;
+    grid-template-columns: 120px 60px 1fr 1fr;
     justify-items: center;
     align-items: center;
   }
@@ -23,6 +23,6 @@
   @media (min-width: 992px) {
   .footer {
     display: grid;
-    grid-template-columns: 100px 100px 1fr 1fr;
+    grid-template-columns: 150px 100px 1fr 1fr;
   }
 }

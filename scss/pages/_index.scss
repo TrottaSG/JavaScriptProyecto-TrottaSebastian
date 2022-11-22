@@ -1,195 +1,199 @@
 .header {
     background-color: blueviolet;
     color: rgb(253, 253, 253);
+
+}
+.main__header {
+  background-color: blueviolet;
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 115px;
+  display: grid;
+  grid-template-columns: 150px 60px auto;
+  align-items: center;
+  top: 0%;
+  :first-child{
+    margin: 0 20px;
   }
-  .main__header {
-    background-color: blueviolet;
-    color: white;
-    position: relative;
-    width: 100%;
-    height: 115px;
-    display: grid;
-    grid-template-columns: 100px 60px auto;
-    align-items: center;
-    top: 0%;
-  }
+}
+.main__body {
+  background-image: url(../img/Background-index.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  background-color: white;
+  color: black;
+  align-items: center;
+}
+.main__body {
+  padding: 5px 15px;
+  display: grid;
+  grid-template-areas: 
+  "card-01"
+  "card-02" 
+  "card-03"
+  "card-04"
+  "card-05" 
+  "card-06"
+  "card-07" 
+  "card-08" 
+  "card-09"
+  "card-10" 
+  "card-11" 
+  "card-12";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px 0;
+}
+.card-01 {
+  grid-area: card-01;
+}
+.card-02 {
+  grid-area: card-02;
+}
+.card-03 {
+  grid-area: card-03;
+}
+.card-04 {
+  grid-area: card-04;
+}
+.card-05 {
+  grid-area: card-05;
+}
+.card-06 {
+  grid-area: card-06;
+}
+.card-07 {
+  grid-area: card-07;
+}
+.card-08 {
+  grid-area: card-08;
+}
+.card-09 {
+  grid-area: card-09;
+}
+.card-10 {
+  grid-area: card-10;
+}
+.card-11 {
+  grid-area: card-11;
+}
+.card-12 {
+  grid-area: card-12;
+}
+.card {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  background: rgba(0,0,0,.4);
+  text-align: center;
+  align-items: center;
+}
+.card .back {
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
+
+
+.fixed {
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+
+}
+
+@media (min-width: 992px) {
+
   .main__body {
-    background-image: url(../img/Background-index.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  body {
-    background-color: white;
-    color: black;
-    align-items: center;
-  }
-  .main__body {
-    padding: 5px 15px;
-    display: grid;
-    grid-template-areas: 
-    "card-01"
-    "card-02" 
-    "card-03"
-    "card-04"
-    "card-05" 
-    "card-06"
-    "card-07" 
-    "card-08" 
-    "card-09"
-    "card-10" 
-    "card-11" 
-    "card-12";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px 0;
-  }
-  .card-01 {
-    grid-area: card-01;
-  }
-  .card-02 {
-    grid-area: card-02;
-  }
-  .card-03 {
-    grid-area: card-03;
-  }
-  .card-04 {
-    grid-area: card-04;
-  }
-  .card-05 {
-    grid-area: card-05;
-  }
-  .card-06 {
-    grid-area: card-06;
-  }
-  .card-07 {
-    grid-area: card-07;
-  }
-  .card-08 {
-    grid-area: card-08;
-  }
-  .card-09 {
-    grid-area: card-09;
-  }
-  .card-10 {
-    grid-area: card-10;
-  }
-  .card-11 {
-    grid-area: card-11;
-  }
-  .card-12 {
-    grid-area: card-12;
-  }
-  .card {
-    position: relative;
-    width: 100%;
-    height: 300px;
-  }
-  .card .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: 0.5s;
-  }
-  .card .front img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .card .front h3 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    color: white;
-    background: rgba(0,0,0,.4);
-    text-align: center;
-    align-items: center;
-  }
-  .card .back {
-    color: black;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
-  }
-  
-  
-  .fixed {
-    position: fixed;
-    bottom: 50px;
-    right: 15px;
-
-  }
-
-  @media (min-width: 992px) {
-
-    .main__body {
-        background-image: url(../img/Background-index.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 50px 70px 70px 70px;
-        display: grid;
-        grid-template-areas: 
-        "card-01 card-02 card-03"
-        "card-04 card-05 card-06"
-        "card-07 card-08 card-09"
-        "card-10 card-11 card-12";
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 50px 20px;
-      }
-      .card {
-        position: relative;
-        width: 350px;
-        height: 300px;
-        background-color: transparent;
-        border: none;
-      }
-      .card .front {
-        transform: perspective(600px) rotateY(0deg);
-        box-shadow: 0 5px 10px black;
-      }
-      .card .back {
-        transform: perspective(600px) rotateY(180deg);
-        background: black;
-        padding: 15px;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-        box-shadow: 0 5px 10px black;
-      }
-      .card .back h3 {
-        font-size: 30px;
-        margin-top: 20px;
-        letter-spacing: 2px;
-      }
-      .card .back p {
-        letter-spacing: 1px;
-      }
-      
-      .card .back .link {
-        border-top: solid 1px white;
-      height: 50px;
-      line-height: 50px;
-      }
-      .card .back .link a {
-        color: white;
-      }
-      .card:hover .front {
-        transform: perspective(600px) rotateY(180deg);
-      }
-      .card:hover .back {
-        transform: perspective(600px) rotateY(360deg);
-      }
+      background-image: url(../img/Background-index.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 50px 70px 70px 70px;
+      display: grid;
+      grid-template-areas: 
+      "card-01 card-02 card-03"
+      "card-04 card-05 card-06"
+      "card-07 card-08 card-09"
+      "card-10 card-11 card-12";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 50px 20px;
+    }
+    .card {
+      position: relative;
+      width: 350px;
+      height: 300px;
+      background-color: transparent;
+      border: none;
+    }
+    .card .front {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px black;
+    }
+    .card .back {
+      transform: perspective(600px) rotateY(180deg);
+      background: black;
+      padding: 15px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      box-shadow: 0 5px 10px black;
+    }
+    .card .back h3 {
+      font-size: 30px;
+      margin-top: 20px;
+      letter-spacing: 2px;
+    }
+    .card .back p {
+      letter-spacing: 1px;
+    }
+    
+    .card .back .link {
+      border-top: solid 1px white;
+    height: 50px;
+    line-height: 50px;
+    }
+    .card .back .link a {
+      color: white;
+    }
+    .card:hover .front {
+      transform: perspective(600px) rotateY(180deg);
+    }
+    .card:hover .back {
+      transform: perspective(600px) rotateY(360deg);
+    }
 
 
-  }
+}
