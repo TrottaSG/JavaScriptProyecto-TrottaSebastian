@@ -6,23 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia de Viajes</title>
     <link rel="shortcut icon" href="img\ArgentinaViaja-logo.png" />
-    <link rel="stylesheet" href="css/Style.css">
+        <!--FONTS -->
+
+    <!--ABORET0-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+    <!--NUNITO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <!--SEO-->
+
+    <meta name="description" content="Somos un emprendimiento de para ayudar a las personas a poder viajar a precios accesibles." >
+
+    <meta name="author" content="Trotta Sebastian Gabriel">
+
+    <meta name="copyright" content="Argentina Viaja">
+
+    <!--OPEN GRAPH-->
+
+    <meta property="og:title" content=Paquetes de viaje en Argentina>
+    <meta property="og:site_name" content=Paquetes de viaje en Argentina>
+    <meta property="og:url" content=www.argentinaviaja.com.ar>
+    <meta property="og:description" content=Somos un emprendimiento de para ayudar a las personas a poder viajar a precios accesibles..>
+    <meta property="og:type" content=paquetes>
+    <meta property="og:image" content=https://i.pinimg.com/originals/96/26/aa/9626aa4db124ba0fde88b0ac4f131bbf.jpg>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
-    <header class="main__header">
-        <p>ArgentinaViaja</p> <img src="img\ArgentinaViaja-logo.png" alt="Logo" height="50px">
-        <nav class="main__header__nav">
-            <il class="main__header__nav__ul"><a href="./index.html" Inicio> Inicio </a>
-            </il>
-            <il class="main__header__nav__ul"><a href="paquetes-invierno.html" Nosotros> Paquetes Invierno </a>
-            </il>
-            <il class="main__header__nav__ul"><a href="paquetes-verano.html" Servicios> Paquetes Verano </a>
-            </il>
-            <il class="main__header__nav__ul"><a href="proyectos.html" Proyectos> Proyectos </a>
-            </il>
-            <il class="main__header__nav__ul"><a href="contacto.html" Contacto> Contacto </a>
-            </il>
-        </nav>
+    <header>
+        <div class="nav-bg">
+            <a href="../index.html">
+                <img class="logo" src="./img/ArgentinaViaja-logo.png" alt="">
+            </a>
+            <nav class="navcont">
+                <input type="checkbox" class="menu">
+                <div class="hamburguer"></div>
+
+                <div class="nav-list">
+                    <a class="navtext" href="./paquetes.html">Paquetes</a>
+                    <a class="navtext" href="./faq.html">FAQ</a>
+                    <a class="navtext" href="./proyectos.html">Proyectos</a>
+                    <a class="navtext" href="./contacto.html">Contacto</a>
+                </div>
+            </nav>
+        </div>
     </header>
     <section>
         <main class="main__body"> 
@@ -91,10 +126,7 @@
     <div class="face back">
         <h3>Cordoba</h3>
         <P> La Provincia de Córdoba es un destino ideal para experimentar las más diversas sensaciones 
-            que a un viajero le puedan provocar placer. Con una indeleble impronta cultural e histórica, 
-            nuestro territorio combina tradición, modernidad y una excepcional riqueza paisajística. 
-            Por la variedad de destinos que propone su geografía, 
-            es un lugar donde el turista podrá disfrutar todo el año propuestas siempre novedosas.</P>
+            que a un viajero le puedan provocar placer. Con una indeleble impronta cultural e histórica.</P>
         <div class="link">
             <a href="paquetes-verano.html"> Detalles </a>
         </div>
@@ -109,7 +141,7 @@
         <h3>Costa Atlantica</h3>
         <P>La Costa Atlántica es una denominación popular en Argentina para referirse a las ciudades 
             con turismo estival basado en el atractivo de centros balnearios, todas son lindantes 
-            con el Océano Atlántico. Cada verano, son escogidas por millones de personas como destino para vacacionar</P>
+            con el Océano Atlántico.</P>
         <div class="link">
             <a href="paquetes-verano.html"> Detalles </a>
         </div>
@@ -123,8 +155,7 @@
     <div class="face back">
         <h3>Entre Rios</h3>
         <P>El turismo de la Provincia de Entre Ríos se encuentra trazado por las enormes bondades 
-            de sus recursos naturales y belleza natural sus ríos, playas, aguas termales y su tierra. 
-            La tranquilidad y los paisajes provinciales se combinan con el cálido servicio de los entrerrianos.</P>
+            de sus recursos naturales y belleza natural sus ríos, playas, aguas termales y su tierra. </P>
         <div class="link">
             <a href="paquetes-verano.html"> Detalles </a>
         </div>
@@ -138,9 +169,7 @@
     <div class="face back">
         <h3>Jujuy</h3>
         <P> Salpicada por grandes cerros, paisajes multicolores y preciosos pueblos, 
-            esta provincia es de las más bellas del país. Desde Purmamarca con su famoso cerro de los 7 colores, 
-            pasando por Humahuaca, el Pucara de Tilcara y las Salinas Grandes, la provincia atrae con la variedad 
-            de lugares que visitar en Jujuy.</P>
+            esta provincia es de las más bellas del país.</P>
         <div class="link">
             <a href="paquetes-verano.html"> Detalles </a>
         </div>
@@ -184,8 +213,7 @@
         <h3>Puerto Madryn</h3>
         <P> Es considerada la puerta de entrada a la península Valdés, 
             declarada en 1999 como Patrimonio Mundial de la Humanidad por la Unesco. 
-            Es uno de los centros de turismo más importantes de toda la región y del país, 
-            considerada asimismo como la capital nacional del buceo.</P>
+            Es considerada como la capital nacional del buceo.</P>
         <div class="link">
             <a href="paquetes-invierno.html"> Detalles </a>
         </div>
@@ -199,26 +227,33 @@
     <div class="face back">
         <h3>Salta</h3>
         <P>Turismo histórico, turismo ecológico, turismo religioso, turismo aventura y turismo gastronómico 
-            se conjugan en Salta como en pocos lugares de Sudamérica. La sofisticada ciudad de Salta encabeza 
-            la provincia del mismo nombre en el magnífico entorno del Valle de Lerma, en la precordillera andina.</P>
+            se conjugan en Salta como en pocos lugares de Sudamérica.</P>
         <div class="link">
             <a href="paquetes-verano.html"> Detalles </a>
         </div>
     </div>
     </div>
 </main>
-</section> 
-<a href="https://web.whatsapp.com/"><div class="fixed">
-    <img src="img\whatsapp.png" alt="whatsapp" width="50" height="50" >
-</div></a>
-<footer class="footer">
-    <il><a href="./index.html" Inicio> ArgentinaViaja </a>
-    </il>
-    <img src="img\ArgentinaViaja-logo.png" alt="Logo" class="footer__Logo">
-    <il class="main__header__nav__ul"><a href="contacto.html" Contacto> Contacto </a>
-    </il>
-    <il class="main__header__nav__ul"><a href="https://www.instagram.com/" Contacto> Redes Sociales </a>
-    </il>
+<footer id="footer">
+    <p class="footext">ArgentinaViaja</p>
+    <div class="footicon">
+    <a href="https://www.instagram.com/">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="4" width="16" height="16" rx="4" />
+        <circle cx="12" cy="12" r="3" />
+        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+        </svg>
+    </a>
+
+    <a href="https://web.whatsapp.com/">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+        <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+        </svg>
+    </a>
+    </div>
 </footer>
 </body>
 </html>

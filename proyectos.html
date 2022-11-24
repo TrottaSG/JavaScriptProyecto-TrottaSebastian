@@ -1,104 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia de Viajes</title>
     <link rel="shortcut icon" href="img\ArgentinaViaja-logo.png" />
-    <link rel="stylesheet" href="css/Style.css">
-  </head>
+    <!--FONTS -->
+
+    <!--ABORET0-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+    <!--NUNITO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+
+       <!--SEO-->
+
+       <meta name="description" content="Somos un emprendimiento de para ayudar a las personas a poder viajar a precios accesibles." >
+
+       <meta name="author" content="Trotta Sebastian Gabriel">
+   
+       <meta name="copyright" content="Argentina Viaja">
+   
+       <!--OPEN GRAPH-->
+   
+       <meta property="og:title" content=Paquetes de viaje en Argentina>
+       <meta property="og:site_name" content=Paquetes de viaje en Argentina>
+       <meta property="og:url" content=www.argentinaviaja.com.ar>
+       <meta property="og:description" content=Somos un emprendimiento de para ayudar a las personas a poder viajar a precios accesibles..>
+       <meta property="og:type" content=paquetes>
+       <meta property="og:image" content=https://i.pinimg.com/originals/96/26/aa/9626aa4db124ba0fde88b0ac4f131bbf.jpg>
+   
+       <!-- CSS -->
+       <link rel="stylesheet" href="../css/normalize.css">
+       <link rel="stylesheet" href="../css/style.css">
+       <title>ArgentinaViaja - Proyectos</title>
+
+</head>
+
 <body>
-  <header class="main__header">
-      <p>ArgentinaViaja</p> <img src="img\ArgentinaViaja-logo.png" alt="Logo" height="50px">
-      <nav class="main__header__nav">
-        <il class="main__header__nav__ul"><a href="./index.html" Inicio> Inicio </a>
-        </il>
-        <il class="main__header__nav__ul"><a href="paquetes-invierno.html" Nosotros> Paquetes Invierno </a>
-        </il>
-        <il class="main__header__nav__ul"><a href="paquetes-verano.html" Servicios> Paquetes Verano </a>
-        </il>
-        <il class="main__header__nav__ul"><a href="proyectos.html" Proyectos> Proyectos </a>
-        </il>
-        <il class="main__header__nav__ul"><a href="contacto.html" Contacto> Contacto </a>
-        </il>
-      </nav>
-  </header>
-  <main class="main__body"> 
-    <div class="card">
-      <div class="face front" class="card-01">
-      <img src="img\Chile.jpg" alt="">
-      <h3>Chile</h3>
-      </div>
-      <div class="face back">
-  <h3>Chile</h3>
-  <P>Ubicado en el extremo sudoeste de América del Sur, Chile se describe constituido por tres zonas geográficas. 
-    La primera de ellas, Chile continental, comprende una franja en la costa occidental del Cono Sur. a segunda, 
-    Chile insular, corresponde a un conjunto de islas de origen volcánico en el océano Pacífico Sur: el archipiélago 
-    de Juan Fernández y las islas Desventuradas, pertenecientes a Sudamérica, la isla Salas y Gómez y la isla de Pascua, 
-    ubicadas en Oceanía</P>
-      <div class="link"
-          <a href="Paquetes Verano.html"> Detalles </a>
-      </div>
-      </div>
-  </div>
-  <div class="card">
-    <div class="face front" class="card-02">
-    <img src="img\Brasil.jpeg" alt="">
-    <h3>Brasil</h3>
+  <header>
+    <div class="nav-bg">
+        <a href="../index.html">
+            <img class="logo" src="./img/ArgentinaViaja-logo.png" alt="">
+        </a>
+        <nav class="navcont">
+            <input type="checkbox" class="menu">
+            <div class="hamburguer"></div>
+
+            <div class="nav-list">
+                <a class="navtext" href="./paquetes.html"> Paquetes</a>
+                <a class="navtext" href="./faq.html"> FAQ</a>
+                <a class="navtext" href="./proyectos.html"> Proyectos</a>
+                <a class="navtext" href="./contacto.html"> Contacto</a>
+            </div>
+        </nav>
     </div>
-    <div class="face back">
-<h3>Brasil</h3>
-<P>Con 6 600 000 visitantes extranjeros en 2017,1​ Brasil es el segundo destino del mercado turístico 
-  internacional en América del Sur después de Argentina y ocupa el tercer lugar en América Latina en 
-  términos de turistas internacionales</P>
-    <div class="link">
-        <a href="Paquetes Verano.html"> Detalles </a>
-    </div>
-    </div>
-</div>
-<div class="card">
-  <div class="face front" class="card-03">
-  <img src="img\Peru.jpeg" alt="">
-  <h3>Peru</h3>
-  </div>
-  <div class="face back">
-<h3>Peru</h3>
-<P>El Turismo en el Perú se constituye en la tercera industria más grande de la nación, detrás de la pesca y la minería. 
-  Principalmente está dirigida hacia los monumentos arqueológicos, pues cuenta con más de cien mil sitios de interés, 
-  el ecoturismo en la Amazonía peruana,  el turismo cultural en las ciudades coloniales, turismo gastronómico, 
-  turismo de aventura y turismo de playa.</P>
-  <div class="link">
-      <a href="Paquetes Verano.html"> Detalles </a>
-  </div>
-  </div>
-</div>
-<div class="card">
-  <div class="face front" class="card-04">
-  <img src="img\Uruguay.jpg" alt="">
-  <h3>Uruguay</h3>
-  </div>
-  <div class="face back">
-<h3>Uruguay</h3>
-<P>Uruguay tiene varios destinos lugares turísticos, entre los que se destacan Punta del Este, Piriápolis, Montevideo, 
-  Colonia del Sacramento, Costa de Oro, Salto, Lavalleja, Rocha, Artigas, Rivera, entre otros. El turismo es uno de los 
-  sectores más importantes de la economía uruguaya.</P>
-  <div class="link">
-      <a href="Paquetes Verano.html"> Detalles </a>
-  </div>
-  </div>
-</div>
-  </main>
-  <a href="https://web.whatsapp.com/"><div class="fixed">
-    <img src="img\whatsapp.png" alt="whatsapp" width="50" height="50" >
-</div></a>
-<footer class="footer">
-  <il><a href="./index.html" Inicio> ArgentinaViaja </a>
-  </il>
-  <img src="img\ArgentinaViaja-logo.png" alt="Logo" class="footer__Logo">
-  <il class="main__header__nav__ul"><a href="contacto.html" Contacto> Contacto </a>
-  </il>
-  <il class="main__header__nav__ul"><a href="https://www.instagram.com/" Contacto> Redes Sociales </a>
-  </il>
+</header>
+
+    <section class="prox-cont">
+        <div class="text">
+            <h2>Chile</h2>
+
+            <p>Ubicado en el extremo sudoeste de América del Sur, Chile se describe constituido por tres zonas geográficas. 
+              La primera de ellas, Chile continental, comprende una franja en la costa occidental del Cono Sur. a segunda, 
+              Chile insular, corresponde a un conjunto de islas de origen volcánico en el océano Pacífico Sur: el archipiélago 
+              de Juan Fernández y las islas Desventuradas, pertenecientes a Sudamérica, la isla Salas y Gómez y la isla de Pascua, 
+              ubicadas en Oceanía</p>
+        </div>
+
+        <img src="./img/Chile.jpg" alt="">
+    </section>
+
+    <section class="rev">
+            <img src="./img/Brasil.jpeg" alt="">
+
+            <div class="text">
+                <h2>Brasil</h2>
+
+                <p>Con 6 600 000 visitantes extranjeros en 2017,1​ Brasil es el segundo destino del mercado turístico 
+                  internacional en América del Sur después de Argentina y ocupa el tercer lugar en América Latina en 
+                  términos de turistas internacionales</p>
+            </div>
+    </section>
+
+    <section class="prox-cont">
+        <div class="text">
+            <h2>Peru</h2>
+
+            <p>El Turismo en el Perú se constituye en la tercera industria más grande de la nación, detrás de la pesca y la minería. 
+              Principalmente está dirigida hacia los monumentos arqueológicos, pues cuenta con más de cien mil sitios de interés, 
+              el ecoturismo en la Amazonía peruana,  el turismo cultural en las ciudades coloniales, turismo gastronómico, 
+              turismo de aventura y turismo de playa.</p>
+        </div>
+
+        <img src="./img/Peru.jpeg" alt="">
+    </section>
+
+
+
+
+    <footer id="footer">
+      <p class="footext">ArgentinaViaja</p>
+      <div class="footicon">
+      <a href="https://www.instagram.com/">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <rect x="4" y="4" width="16" height="16" rx="4" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+          </svg>
+      </a>
+
+      <a href="https://web.whatsapp.com/">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+          <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+          </svg>
+      </a>
+      </div>
+  </footer>
+
 </body>
 </html>
