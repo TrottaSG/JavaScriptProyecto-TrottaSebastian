@@ -9194,7 +9194,7 @@ h2, .h2 {
   padding: 1rem; }
 
 .faqcontainer {
-  margin: 4rem auto;
+  margin: 4rem auto 100%;
   padding: 5rem;
   width: 100rem;
   align-items: center;
@@ -9246,7 +9246,7 @@ h2, .h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 4rem auto;
+    margin: 4rem auto 100%;
     padding: 3rem 2rem;
     max-width: 100%; }
   .faqblock h2, .faqblock .h2 {
@@ -9266,7 +9266,7 @@ h2, .h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 4rem 0rem;
+    margin: 4rem 0rem 100%;
     padding: 0;
     width: 100%; }
   .faqblock h2, .faqblock .h2 {

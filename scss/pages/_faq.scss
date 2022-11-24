@@ -12,7 +12,7 @@
 }
 
 .faqcontainer {
-    margin: 4rem auto;
+    margin: 4rem auto 100%;
     padding: 5rem;
     width: 100rem;
     align-items: center;
@@ -71,7 +71,7 @@
 @media (max-width: 1000px) {
     .faqcontainer {
         @include flex (row, center, center);
-        margin: 4rem auto;
+        margin: 4rem auto 100%;
         padding: 3rem 2rem;
         max-width: 100%;
     }
@@ -100,7 +100,7 @@
 @media (max-width: 480px) {
     .faqcontainer {
         @include flex (row, center, center);
-        margin: 4rem 0rem;
+        margin: 4rem 0rem 100%;
         padding: 0;
         width: 100%;
     }
