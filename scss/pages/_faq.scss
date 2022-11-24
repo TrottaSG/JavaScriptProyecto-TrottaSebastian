@@ -1,9 +1,10 @@
 /* FAQ */
+@import "../utilities/variables";
 
 .faqtitle {
     @include flex (row, center, center);
     letter-spacing: 2px;
-    background-color: $terctono;
+    background-color: $background;
     color: $blanco;
     margin: 0 auto;
     text-align: center;
@@ -18,9 +19,7 @@
     background-color: $primario;
     border-radius: 8%;
     border:  2px solid $secundario;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-top: 10px solid $sectono;
+    border-radius: 5px;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -40,18 +39,16 @@
 }
 
 .faqitem {
-    background-color:rgb(249, 249, 249);
+    background-color:rgba(248, 231, 231, 0.37);
     padding: 2rem;
     margin: 2rem;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-top: 6px solid $blanco;
-    transition: 0.4s;
+    border-radius: 5px;
+    transition: 0.8s;
 }
 
 .faqitem:hover {
-    border-top: 12px solid $blanco;
     transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .faqitem:hover h2 {
@@ -66,6 +63,9 @@
 
 .faqblock h2 .faqbutton-title {
     padding: 1em 1.5em 1em 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(245, 234, 234);
+    font-weight: bold;
 }
 
 @media (max-width: 1000px) {

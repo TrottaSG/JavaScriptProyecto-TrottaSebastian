@@ -1,7 +1,9 @@
 /*FOOTER*/
+@import "../utilities/variables";
+@import "../utilities/mixins";
 
 #footer {
-    background-color: $sectono;
+    background-color: $crema;
     border-top: 2px solid $negro;
     padding: 1rem;
     @include ancho-alto (100%, 50px);
