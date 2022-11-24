@@ -8489,7 +8489,7 @@ a {
     gap: 50px 20px; }
   .card {
     position: relative;
-    width: 350px;
+    max-width: 350px;
     height: 300px;
     background-color: transparent;
     border: none; }
@@ -9070,7 +9070,7 @@ h2, .h2 {
   /*MAPA*/
   .map {
     align-items: center;
-    width: 700px; } }
+    max-width: 100%; } }
 
 @media (max-width: 480px) {
   /*FORMULARIO*/
@@ -9248,7 +9248,7 @@ h2, .h2 {
     align-items: center;
     margin: 4rem auto;
     padding: 3rem 2rem;
-    width: 740px; }
+    max-width: 100%; }
   .faqblock h2, .faqblock .h2 {
     padding: 0; }
   .faqitem:hover h2, .faqitem:hover .h2 {
@@ -9402,7 +9402,7 @@ body {
   right: 0;
   box-shadow: -20px 0 40px rgba(0, 0, 0, 0.5); }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
   .hamburguer,
   .menu {
     display: block;
