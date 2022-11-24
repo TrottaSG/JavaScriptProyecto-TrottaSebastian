@@ -221,108 +221,6 @@ h2 {
     transform: scale(0.8);
 }
 
-
-/*HOME*/
-
-.homeback {
-    background-image: url(../assets/home-3.png);
-    background-repeat: none;
-    background-size: cover;
-    height: 100%;
-    position: relative;
-    padding-bottom: 4rem;
-}
-
-.hometitle {
-    
-    background-color: var(--terctono);
-    color: var(--blanco);
-    transform: skewX(160deg);
-    width: fit-content;
-    height: fit-content;
-    margin-top: 1.5rem;
-    margin-left: 4rem;
-    transition: 0.4s;
-}
-.hometitle:hover {
-    font-size: 7rem;
-    width: fit-content;
-    height: fit-content;
-    transform: skewX(150deg);
-    cursor: default;
-}
-
-.homelist {
-    margin-left: 60px;
-    margin-top: 50px;
-    font-size: 5rem;
-    font-weight: 600;
-}
-
-.homebutton {
-    border: none;
-    margin-left: 11rem;
-    padding: 1.5rem 5rem;
-    font-family: 'Aboreto';
-    background-color: var(--terciario);
-    color: var(--blanco);
-    font-size: large;
-    border-radius: 2rem;
-    border-top: 1px solid var(--primario);
-    transition: 0.5s;
-    letter-spacing: 1px;
-
-}
-
-.homebutton:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-@media (max-width: 480px) {
-
-    .homeback {
-        background-image: url(../assets/home.jpg);
-        background-repeat: none;
-        background-size: cover;
-        height: 100%;
-        position: relative;
-        padding-bottom: 4rem;
-    }
-
-    .hometitle {
-        transform: none;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .hometitle:hover {
-        font-size: 7rem;
-        width: fit-content;
-        height: fit-content;
-        cursor: default;
-    }
-
-    .homelist {
-        color: var(--negro);
-        margin: 0 auto;
-        text-align: center;
-        font-size: 4rem;
-        padding-bottom: 3rem;
-        padding-top: 2rem;
-    }
-
-    .text-macetas {
-        color: var(--blanco);
-    }
-
-    .homebutton {
-        margin: 0 2.5rem;
-        width: fit-content;
-        padding: 0.5rem;
-    }
-}
-
 /* FAQ */
 
 .faqtitle {
@@ -456,7 +354,7 @@ h2 {
 .contactotitle {
     margin: 0 auto;
     text-align: center;
-    background-color: var(--terctono);
+    background-color: $primario;
     color: var(--blanco);
     width: 650px;
     transform: skewX(160deg);
@@ -481,10 +379,10 @@ h2 {
 .formcont {
     margin: 0 auto;
     width: min(60rem, 120rem);
-    background-color: var(--secundario);
+    background-color: $secundario;
     padding: 2rem;
     border-radius: 10px;
-    border-top: 9px solid var(--primario);
+    border-top: 9px solid $primario;
     transition: 0.5s;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
 }
@@ -570,7 +468,7 @@ h2 {
     margin: 0 2rem;
     height: 100%;
     width: fit-content;
-    background-color: var(--primario);
+    background-color: $secundario;
     transition: 0.4s;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
 }
@@ -617,11 +515,11 @@ h2 {
 .map {
     display: flex;
     justify-content: center;
-    background-color: var(--terctono);
+    background-color: $secundario;
     width: fit-content;
     padding: 0rem;
     margin: 4rem auto;
-    border: 5px solid var(--terciario);
+    border: 5px solid $secundario;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
     transition: 0.5s;
 }
@@ -767,244 +665,4 @@ h2 {
 
 /*PROXIMAMENTE*/
 
-.prox-cont, .rev{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 0rem;
-    transition: 0.4s;
-}
-
-
-.text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.text h2 {
-    color: var(--terciario);
-    font-size: 3rem;
-    transition: 0.4s;
-}
-
-.prox-cont img, .rev img{
-    width: 700px;
-    height: 700px;
-    object-fit: contain;
-}
-
-.prox-cont:hover, .rev:hover{
-    font-size: larger;
-}
-
-.prox-cont:hover h2, .rev:hover h2{
-    font-size: 4rem;
-}
-
-@media (max-width: 1000px) {
-    .prox-cont img, .rev img{
-        width: 100%;
-        height: fit-content;
-    }
-} 
-
-@media (max-width: 480px) {
-    .prox-cont {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        transition: 0.4s;
-    }
-
-    .rev {
-        display: flex;
-        flex-wrap: wrap-reverse;
-    }
-
-
-    .prox-cont img, .rev img{
-        width: 100%;
-        height: fit-content;
-    }
-
-    .text {
-        width: fit-content;
-        height: 300px;
-    }
-
-    .text p {
-        margin: 0 auto;
-    }
-
-    .text h2 {
-        font-size: 3rem;
-    }
-
-    .prox-cont:hover {
-        font-size: 16px;
-    }
-    
-    .prox-cont:hover h2{
-        font-size: 3rem;
-    }
-}
-
-
-
-/*PRODUCTOS*/
-
-
-.productos {
-    margin: 0 10px 10px 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    width: 100%;
-    justify-content: space-around;
-}
-
-/*Tarjetas*/
-
-.product-title {
-    margin: 0 auto;
-    text-align: center;
-    background-color: var(--terctono);
-    width: 45%;
-    transform: skewX(160deg);
-    transition: 0.5s;
-    
-    
-}
-
-.product-title:hover {
-    transform: skewX(150deg);
-}
-
-.product-title h2 {
-    font-size: 6rem;
-    color: var(--blanco);
-}
-
-.card_contacto {
-    position: inherit;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    margin: 0;
-    width: fit-content;
-    transform: scale(0.8);
-}
-
-.card_contacto:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
-}
-
-.card_contacto img {
-    object-fit: contain;
-    width: 400px;
-    height: 400px;
-    padding: 10px 10px 0 10px;
-    background-color: var(--blanco);
-}
-
-.card-cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 2rem 0;
-    background-color: var(--terciario);
-    color: var(--blanco);
-}
-
-.card-cont h4 {
-    font-size: 3rem;
-}
-
-.card-cont p {
-    padding: 0 0 4rem 0;
-}
-
-.card-cont button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background-color: var(--sectono);
-    border-radius: 100%;
-    padding-top: 0;
-    height: 60px;
-    width: 60px;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
-    transition: 0.4s;
-}
-
-.card-cont button:hover {
-    transform: scale(1.2);
-    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
-.card_contacto:hover{
-    transform: scale(0.9);
-}
-
-@media (max-width: 1000px ) {
-    .product-title:hover {
-        transform: none;
-    }
-
-    .productos {
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .card_contacto {
-        transform: scale(0.75);
-    }
-
-    .card_contacto:hover{
-        transform: scale(0.8);
-    }
-
-    .card-cont p {
-        font-size: 3rem;
-    }
-    
-} 
-
-@media (max-width: 480px ) {
-    .product-title {
-        width: fit-content;
-        transform: none;
-    }
-    .product-title:hover {
-        transform: none;
-    }
-    
-    .product-title h2 {
-        font-size: 5rem;
-    }
-
-    .productos {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .card_contacto {
-        transform: scale(0.75);
-    }
-
-    .card_contacto:hover{
-        transform: scale(0.8);
-    }
-    
-}
 
