@@ -8382,7 +8382,7 @@ textarea.form-control-lg {
     display: none !important; } }
 
 .main__body {
-  background-image: url(../img/Background-index.jpeg);
+  background-image: url(../img/Background.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -8394,7 +8394,18 @@ body {
 .main__body {
   padding: 5px 15px;
   display: grid;
-  grid-template-areas: "card-01" "card-02"  "card-03" "card-04" "card-05"  "card-06" "card-07"  "card-08"  "card-09" "card-10"  "card-11"  "card-12";
+  grid-template-areas: "card-01"
+ "card-02" 
+ "card-03"
+ "card-04"
+ "card-05" 
+ "card-06"
+ "card-07" 
+ "card-08" 
+ "card-09"
+ "card-10" 
+ "card-11" 
+ "card-12";
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 15px 0; }
@@ -8478,12 +8489,15 @@ a {
 
 @media (min-width: 992px) {
   .main__body {
-    background-image: url(../img/Background-index.jpeg);
+    background-image: url(../img/Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 70px 70px 70px;
     display: grid;
-    grid-template-areas: "card-01 card-02 card-03" "card-04 card-05 card-06" "card-07 card-08 card-09" "card-10 card-11 card-12";
+    grid-template-areas: "card-01 card-02 card-03"
+ "card-04 card-05 card-06"
+ "card-07 card-08 card-09"
+ "card-10 card-11 card-12";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 50px 20px; }
