@@ -1,4 +1,4 @@
-    const pintarCarrito = () => {
+const pintarCarrito = () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "flex";
     const modalHeader = document.createElement("div");
@@ -67,10 +67,17 @@
     totalBuying.className = "total-content"
     totalBuying.innerHTML = `total a pagar: ${total} $`;
     modalContainer.append(totalBuying);
+    
+    let verResumenDeCompra = document.createElement("button");
 
-    };
+    verResumenDeCompra.innerText = "ResumenDeCompra";
+    verResumenDeCompra.className = "descargar-resumen";
+    modalContainer.append(verResumenDeCompra);
 
-    verCarrito.addEventListener("click", pintarCarrito)
+    verResumenDeCompra.addEventListener("click", saveFile);
+};
+
+verCarrito.addEventListener("click", pintarCarrito)
 
 const eliminarProducto = () => {
     const foundId = carrito.find ((element) => element.id);
@@ -94,5 +101,4 @@ const carritoCounter = () => {
     cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"));
 };
 
-carritoCounter(); 
-
+carritoCounter()

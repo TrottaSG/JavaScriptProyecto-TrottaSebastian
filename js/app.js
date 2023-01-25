@@ -45,7 +45,7 @@ productos.forEach((product) => {
         });
         console.log(carrito);
         carritoCounter();
-        saveLocal ();
+        saveLocal();
         }
     });
 });
@@ -53,13 +53,25 @@ productos.forEach((product) => {
 
 //set item
 const saveLocal = () => {
-    localStorage.setItem("carrito", JSON.stringify (carrito));
+    localStorage.setItem("carrito", JSON.stringify(carrito));
 };
 
 //get item
 
 
+//Fetch
+ fetch('./data/data.json')
+.then(res=>res.json())
+.then(datos=>{
+    pintarCarrito(datos);
+}) 
 
+/* async functionFetch(){
+    const response= await fetch('./data/data.json');
+    const datos= await response.json();
+
+    pintarCarrito(datos);
+} */
 
 
 
